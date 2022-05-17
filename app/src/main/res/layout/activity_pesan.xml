@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#8854d0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bgtop"
+        tools:context=".pesanActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU MAKANAN dan MINUMAN"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/honey"
+                android:layout_marginTop="30dp"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/honey"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:textColor="#8854d0"
+                android:text="IDR 35.000"
+                />
+            <EditText
+                android:id="@+id/jmlHoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:maxLength="2"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="0"
+                android:textSize="10dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/burger"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/burger"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:textColor="#8854d0"
+                android:text="IDR 30.000"
+                />
+
+            <EditText
+                android:id="@+id/jmlBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/black"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="0"
+                android:textSize="10sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fries"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/fries"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:textColor="#8854d0"
+                android:text="IDR 25.000"
+                />
+
+            <EditText
+                android:id="@+id/jmlFries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ice"
+                android:layout_marginTop="30dp"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ice"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:textColor="#8854d0"
+                android:text="IDR 10.000"
+                />
+
+            <EditText
+                android:id="@+id/jmlIce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/black"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="0"
+                android:textSize="10dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oreo"
+                android:layout_marginTop="30dp"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/oreo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:textColor="#8854d0"
+                android:text="IDR 18.000"
+                />
+
+            <EditText
+                android:id="@+id/jmlOreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/black"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:text="0"
+                android:textSize="10sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fanta"
+                android:layout_marginTop="30dp"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/fanta"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="145dp"
+                android:paddingTop="40dp"
+                android:textColor="#8854d0"
+                android:text="IDR 15.000"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="55dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:padding="12dp"
+                android:maxLength="2"
+                android:id="@+id/jmlFanta"
+                android:textSize="10sp"
+                />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pesan"
+            android:gravity="center"
+            android:background="@drawable/bgbtn"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Pesan"
+            android:onClick="Pesan"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

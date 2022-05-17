@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#8854d0"
+    android:id="@+id/sv">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bgtop"
+        tools:context=".pesanActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PEMBAYARAN"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pembeli"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/bgtext"
+            android:drawableRight="@drawable/ic_user"
+            android:ems="10"
+            android:hint="Nama Pembeli"
+            android:inputType="text"
+            android:maxLength="100"
+            android:minHeight="48dp"
+            android:padding="17dp"
+            android:textColor="#000000"
+            android:textColorHint="#8A8080" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pembelian"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/bgtext"
+            android:drawableRight="@drawable/ic_date"
+            android:padding="17dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tampilSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:text="Subtotal"
+            android:textColor="@color/black"
+            android:background="@drawable/bgtext"
+            android:padding="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tampilTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:text="Total Pembayaran"
+            android:textColor="@color/black"
+            android:background="@drawable/bgtext"
+            android:padding="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bayar"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/txtBayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/bgtext"
+            android:ems="10"
+            android:hint="Bayar"
+            android:inputType="number"
+            android:maxLength="16"
+            android:minHeight="48dp"
+            android:padding="17dp"
+            android:textColor="#000000"
+            android:textColorHint="#8A8080" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bayar"
+            android:gravity="center"
+            android:background="@drawable/bgbtn"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Bayar"
+            android:onClick="Bayar"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kembali"
+            android:gravity="center"
+            android:background="@drawable/bgbtn"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Kembali"
+            android:onClick="Kembali"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT ABC"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jl. Cijerah KM 14,5 No. 17 - Kota Bandung"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="100dp"
+                />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="cekson"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="120dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Nama Pembeli :"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="480dp"
+                />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="500dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Subtotal Pembelian"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="520dp"
+                />
+
+            <TextView
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="540dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Pajak Pembelian :"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="560dp"
+                />
+
+            <TextView
+                android:id="@+id/pajak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="10%"
+                android:layout_marginTop="580dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Total Pembelian :"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="600dp"
+                />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="620dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Tunai :"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="640dp"
+                />
+
+            <TextView
+                android:id="@+id/pembayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="660dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Tanggal Pembelian :"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="680dp"
+                />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginTop="700dp"
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
